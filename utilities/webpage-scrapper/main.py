@@ -1,37 +1,4 @@
-# from newspaper import Article
-# import json
 
-# # The URL of the webpage you want to scrape
-# url = 'https://www.w3schools.com/js/default.asp'  # Replace this with your target URL
-
-# # Create and download the article
-# article = Article(url)
-# article.download()
-# article.parse()
-# #article.nlp()  # Optional: for summary and keywords
-
-# # Prepare full JSON data
-# data = {
-#     "url": url,
-#     "title": article.title,
-#     "authors": article.authors,
-#     "publish_date": article.publish_date.isoformat() if article.publish_date else None,
-#     "top_image": article.top_image,
-#     "summary": article.summary,
-#     "keywords": article.keywords,
-#     "text": article.text  # This is what you were writing to the .txt file
-# }
-
-# # Save everything in a JSON file only
-# with open("scraped_data.json", "w", encoding="utf-8") as json_file:
-#     json.dump(data, json_file, ensure_ascii=False, indent=4)
-
-#     # Print the scraped in text
-# # with open("scraped_data.txt", "w", encoding="utf-8") as txt_file:
-# #     txt_file.write(text)
-
-# print("✅ All article content saved only to 'scraped_data.json'")
-####################################################################################################################################################################
 
 from fastapi import FastAPI
 from pydantic import BaseModel
