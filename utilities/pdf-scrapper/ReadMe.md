@@ -24,3 +24,24 @@ This project is a FastAPI-based backend service that allows users to upload PDF 
 
 ## 📁 Project Structure
 
+-Create a virtual environment
+-python -m venv venv
+-source venv/bin/activate  # on Windows use: venv\Scripts\activate
+
+-Install the dependencies
+-pip install fastapi uvicorn PyMuPDF
+
+-Running the API
+
+-uvicorn main:app --reload
+
+-This will start the server at:
+http://127.0.0.1:8000
+Visit:
+http://127.0.0.1:8000/docs
+for the interactive Swagger UI to test the API.
+
+
+
+
+  

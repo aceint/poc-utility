@@ -18,3 +18,4 @@ async def upload_pdf(file: UploadFile = File(...)):
 
     except Exception as e:
         return {"error": str(e)}
+ 
